@@ -657,7 +657,11 @@
     background-size: 100% 100%;
 }
 </style>
-
+<script type="text/javascript">
+    window.onload = function runScript(){
+        document.getElementById("domainName").innerHTML = window.location.hostname;
+    };
+</script>
 </head>
 <body class="antialiased font-sans">
     <div class="md:flex min-h-screen main-body">
@@ -666,8 +670,9 @@
                 <div class="text-black text-5xl md:text-15xl font-black">Đang kiểm tra...</div>
 
                 <p class="text-grey-darker text-2xl md:text-3xl mb-7 leading-normal">
-                    </p><p class="sub-header"><h1>Đang tiến hành kiểm tra kết nối tự động, dự kiến sẽ chuyển hướng đến trang web bạn yêu cầu sau 5 giây.</h1></p>
-<p class="sub-header"><h1>Vui lòng tự liên hệ với quản trị viên trang web</h1></p>
+                    </p><p class="sub-header"><h1>Đang tiến hành kiểm tra kết nối tự động, sẽ chuyển hướng đến trang web <span id="domainName"></span> sau 5 giây.</h1></p>
+<p class="sub-header"><h1>Vui lòng tự liên hệ với quản trị viên trang web nếu không truy cập được</h1></p>
+<p class="sub-header"><h1><a href="https://www.facebook.com/animevsub">Page AnimeVietsub</a></h1></p>
 
 
                     <br><br>
