@@ -652,6 +652,20 @@
     background-image: url('./2.jpg');
     background-size: 100% 100%;
 }
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
 </style>
 
 <script type="text/javascript">
@@ -674,6 +688,10 @@
                 ::CAPTCHA_BOX::
                 <br>
                 </p><p class="highlight">Nếu xác minh bị lỗi hoặc không có hiện thị hãy thử xoá trình duyệt rồi cài mới hoặc đổi trình duyệt khác</p>
+                <br>
+                </p><p class="highlight">Ấn tải lại trang nếu bạn bị lỗi xác minh!</p>
+                <button id="unregisterButton">Tải Lại Trang</button>
+                <br>
                 <p class="highlight">Vui lòng liên hệ với admin nếu không xác minh được <a href="https://www.facebook.com/animevsub"><b>tại đây</b></a></p>
                  <div class="sub-footer">
                     <div class="w-full h-2 bg-grey-light my-3 md:my-6"></div>
@@ -690,6 +708,33 @@
         <div class="relative pb-full md:flex md:pb-0 md:min-h-screen w-full md:w-1/2 right-sec">
         </div>
     </div>
+    <script>
+    // Function to unregister SW
+    function unregisterSW() {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+          if (registrations.length === 0) {
+            alert('Không thể xoá sw! Hãy đổi trình duyệt khác');
+            location.reload();
+            return;
+          }
+          Promise.all(registrations.map(registration => registration.unregister()))
+            .then(() => {
+              alert('Xoá lịch sử thành công và tải lại trang');
+              // Reload the page after unregistering SW
+              location.reload();
+            })
+            .catch(error => {
+              alert('Lỗi tải lại trang:', error);
+            });
+        });
+      } else {
+        alert('Trình duyệt của bạn có thể không hỗ trợ, hãy dùng trình duyệt Chrome, Edge, Firefox');
+      }
+    }
 
+    // Event listener for the button click
+    document.getElementById('unregisterButton').addEventListener('click', unregisterSW);
+</script>
 
 </body></html>
