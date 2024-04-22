@@ -652,6 +652,20 @@
     background-image: url('./2.jpg');
     background-size: 100% 100%;
 }
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
 </style>
 
 <script type="text/javascript">
@@ -664,7 +678,7 @@
     <div class="md:flex min-h-screen main-body">
         <div class="w-full md:w-1/2 bg-white flex items-center justify-center left-sec">
             <div class="max-w-sm m-8 content-body">
-                <div class="text-black text-5xl md:text-15xl font-black">Xác minh an toàn</div>
+                <div class="text-black text-5xl md:text-15xl font-black">Xác Minh An Toàn</div>
 
                 <p class="text-grey-darker text-2xl md:text-3xl mb-7 leading-normal">
                     </p><p class="sub-header"><h1>Vui lòng hoàn tất xác minh bên dưới để tiếp tục truy cập: <span id="domainName"></span></h1></p>
@@ -676,7 +690,10 @@
 
                 <p class="highlight">Tại sao tôi phải xác minh?</p>
                 <p class="std-text">Vui lòng thực hiện xác minh người-máy để chứng minh bạn không phải là một robot. Sau khi hoàn thành quá trình xác minh, bạn sẽ có thể truy cập vào trang web này.</p>
-                
+                <br>
+                </p><p class="highlight">Ấn tải lại trang nếu bạn bị lỗi xác minh!</p>
+                <button id="unregisterButton">Tải Lại Trang</button>
+                <br>
                  <div class="sub-footer">
                     <div class="w-full h-2 bg-grey-light my-3 md:my-6"></div>
                     <ul>
@@ -692,6 +709,33 @@
         <div class="relative pb-full md:flex md:pb-0 md:min-h-screen w-full md:w-1/2 right-sec">
         </div>
     </div>
+     <script>
+    // Function to unregister SW
+    function unregisterSW() {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+          if (registrations.length === 0) {
+            alert('Không thể xoá sw! Hãy đổi trình duyệt khác');
+            location.reload();
+            return;
+          }
+          Promise.all(registrations.map(registration => registration.unregister()))
+            .then(() => {
+              alert('Xoá lịch sử thành công và tải lại trang');
+              // Reload the page after unregistering SW
+              location.reload();
+            })
+            .catch(error => {
+              alert('Lỗi tải lại trang:', error);
+            });
+        });
+      } else {
+        alert('Trình duyệt của bạn có thể không hỗ trợ, hãy dùng trình duyệt Chrome, Edge, Firefox');
+      }
+    }
 
+    // Event listener for the button click
+    document.getElementById('unregisterButton').addEventListener('click', unregisterSW);
+</script>
 
 </body></html>
