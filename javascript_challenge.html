@@ -661,6 +661,20 @@
     background-image: url('./2.jpg');
     background-size: 100% 100%;
 }
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }	    
 </style>
 <script type="text/javascript">
     window.onload = function runScript(){
@@ -676,7 +690,6 @@
 
                 <p class="text-grey-darker text-2xl md:text-3xl mb-7 leading-normal">
                     </p><p class="sub-header"><h1>Đang tiến hành kiểm tra trình duyệt của bạn, sẽ chuyển hướng đến trang web <span id="domainName"></span> sau 5 giây có thể lâu hơn chút.</h1></p>
-            <p class="sub-header"><b>Nếu không truy cập được vào web hãy thử xoá lịch sử trình duyệt hoặc đổi trình duyệt khác<span id="domainName"></span></b></p>
 			<p class="sub-header">Không nên sử dụng các App không chính thống của <b>AnimeVietsub</b> có thể bị mất dữ liệu và dính virus</p> 
 			<p class="sub-header">Vui lòng tự liên hệ với quản trị viên trang web nếu không truy cập được</p>
 			<p class="sub-header"><a href="https://www.facebook.com/animevsub">Page AnimeVietsub</a></p>
@@ -684,7 +697,10 @@
 
                     <br><br>
                  ::IM_UNDER_ATTACK_BOX::
-      
+      			 <br>
+                </p><p class="highlight">Nếu bạn bị lỗi xác minh lặp lại hãy ấn "Tải Lại Trang" hoặc dùng trình duyệt khác!</p>
+                <button id="unregisterButton">Tải Lại Trang</button>
+                <br>
                  <div class="sub-footer">
                     <div class="w-full h-2 bg-grey-light my-3 md:my-6"></div>
                     <ul>
@@ -700,6 +716,33 @@
         <div class="relative pb-full md:flex md:pb-0 md:min-h-screen w-full md:w-1/2 right-sec">
         </div>
     </div>
+<script>
+    // Function to unregister SW
+    function unregisterSW() {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+          if (registrations.length === 0) {
+            alert('Không thể xoá sw! Hãy đổi trình duyệt khác');
+            location.reload();
+            return;
+          }
+          Promise.all(registrations.map(registration => registration.unregister()))
+            .then(() => {
+              alert('Xoá lịch sử thành công và tải lại trang');
+              // Reload the page after unregistering SW
+              location.reload();
+            })
+            .catch(error => {
+              alert('Lỗi tải lại trang:', error);
+            });
+        });
+      } else {
+        alert('Trình duyệt của bạn có thể không hỗ trợ, hãy dùng trình duyệt Chrome, Edge, Firefox');
+      }
+    }
 
+    // Event listener for the button click
+    document.getElementById('unregisterButton').addEventListener('click', unregisterSW);
+</script>
 
 </body></html>
