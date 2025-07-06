@@ -1,740 +1,678 @@
-
-<html lang="vi"><head>
-    <title>Xác Minh An Toàn</title>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,900" rel="stylesheet">
-
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác Minh An Toàn - AnimeVietsub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        html {
-            line-height: 1.15;
-                -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            margin: 0;
-        }
-
-        header,
-        nav,
-        section {
-            display: block;
-        }
-
-        figcaption,
-        main {
-            display: block;
-        }
-
-        a {
-            background-color: transparent;
-            -webkit-text-decoration-skip: objects;
-        }
-
-        strong {
-            font-weight: inherit;
-        }
-
-        strong {
-            font-weight: bolder;
-        }
-
-        code {
-            font-family: monospace, monospace;
-            font-size: 1em;
-        }
-
-        dfn {
-            font-style: italic;
-        }
-
-        svg:not(:root) {
-            overflow: hidden;
-        }
-
-        button,
-        input {
-            font-family: sans-serif;
-            font-size: 100%;
-            line-height: 1.15;
-            margin: 0;
-        }
-
-        button,
-        input {
-            overflow: visible;
-        }
-
-        button {
-            text-transform: none;
-        }
-
-        button,
-        html [type="button"],
-        [type="reset"],
-        [type="submit"] {
-            -webkit-appearance: button;
-        }
-
-        button::-moz-focus-inner,
-        [type="button"]::-moz-focus-inner,
-        [type="reset"]::-moz-focus-inner,
-        [type="submit"]::-moz-focus-inner {
-            border-style: none;
-            padding: 0;
-        }
-
-        button:-moz-focusring,
-        [type="button"]:-moz-focusring,
-        [type="reset"]:-moz-focusring,
-        [type="submit"]:-moz-focusring {
-            outline: 1px dotted ButtonText;
-        }
-
-        legend {
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            color: inherit;
-            display: table;
-            max-width: 100%;
-            padding: 0;
-            white-space: normal;
-        }
-
-        [type="checkbox"],
-        [type="radio"] {
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            padding: 0;
-        }
-
-        [type="number"]::-webkit-inner-spin-button,
-        [type="number"]::-webkit-outer-spin-button {
-            height: auto;
-        }
-
-        [type="search"] {
-            -webkit-appearance: textfield;
-            outline-offset: -2px;
-        }
-
-        [type="search"]::-webkit-search-cancel-button,
-        [type="search"]::-webkit-search-decoration {
-            -webkit-appearance: none;
-        }
-
-        ::-webkit-file-upload-button {
-            -webkit-appearance: button;
-            font: inherit;
-        }
-
-        menu {
-            display: block;
-        }
-
-        canvas {
-            display: inline-block;
-        }
-
-        template {
-            display: none;
-        }
-
-        [hidden] {
-            display: none;
-        }
-
-        html {
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            font-family: sans-serif;
-        }
-
-        *,
-        *::before,
-        *::after {
-            -webkit-box-sizing: inherit;
-                    box-sizing: inherit;
-        }
-
-        p {
-            margin: 5px 0px;
-        }
-
-        button {
-            background: transparent;
-            padding: 0;
-        }
-
-        button:focus {
-            outline: 1px dotted;
-            outline: 5px auto -webkit-focus-ring-color;
-        }
-
-        *,
-        *::before,
-        *::after {
-            border-width: 0;
-            border-style: solid;
-            border-color: #dae1e7;
-        }
-
-        button,
-        [type="button"],
-        [type="reset"],
-        [type="submit"] {
-            border-radius: 0;
-        }
-
-        button,
-        input {
-            font-family: inherit;
-        }
-
-        input::-webkit-input-placeholder {
-            color: inherit;
-            opacity: .5;
-        }
-
-        input:-ms-input-placeholder {
-            color: inherit;
-            opacity: .5;
-        }
-
-        input::-ms-input-placeholder {
-            color: inherit;
-            opacity: .5;
-        }
-
-        input::placeholder {
-            color: inherit;
-            opacity: .5;
-        }
-
-        button,
-        [role=button] {
-            cursor: pointer;
-        }
-
-        h1{
-            font-weight: 400;
-        }
-
-        .bg-transparent {
-            background-color: transparent;
-        }
-
-        .bg-white {
-            background-color: #fff;
-        }
-
-        .bg-teal-light {
-            background-color: #64d5ca;
-        }
-
-        .bg-blue-dark {
-            background-color: #2779bd;
-        }
-
-        .bg-indigo-light {
-            background-color: #7886d7;
-        }
-
-        .bg-grey-light {
-            background-color: #ddd;
-        }
-
-        .bg-no-repeat {
-            background-repeat: no-repeat;
-        }
-
-        .bg-cover {
-            background-size: cover;
-        }
-
-        .border-grey-light {
-            border-color: #dae1e7;
-        }
-
-        .hover\:border-grey:hover {
-            border-color: #b8c2cc;
-        }
-
-        .rounded-lg {
-            border-radius: .5rem;
-        }
-
-        .border-2 {
-            border-width: 2px;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .flex {
-            display: -webkit-box;
-            display: -ms-flexbox;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 25%, #d63384 50%, #b91c1c 100%);
+            min-height: 100vh;
             display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow-x: hidden;
         }
 
-        .items-center {
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+        /* Animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:rgba(255,255,255,0.15)"/><stop offset="100%" style="stop-color:rgba(255,255,255,0)"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/><circle cx="600" cy="150" r="80" fill="url(%23a)"/><circle cx="150" cy="600" r="90" fill="url(%23a)"/></svg>') no-repeat center center fixed;
+            background-size: cover;
+            animation: float 25s ease-in-out infinite;
+            z-index: -1;
         }
 
-        .justify-center {
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
         }
 
-        .font-sans {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .font-light {
-            font-weight: 300;
-        }
-
-        .font-bold {
-            font-weight: 700;
-        }
-
-        .font-black {
-            font-weight: 900;
-        }
-
-        .h-1 {
-            height: .25rem;
-        }
-
-        .h-2 {
-            height: .18rem;
-        }
-
-        .leading-normal {
-            line-height: 1.5;
-        }
-
-        .m-8 {
-            margin: 2rem;
-        }
-
-        .my-3 {
-            margin-top: .75rem;
-            margin-bottom: .75rem;
-        }
-
-        .mb-8 {
-            margin-bottom: 2rem;
-        }
-
-        .mb-7 {
-            margin-bottom: 1.6rem;
-        }
-
-        .max-w-sm {
-            max-width: 40rem;
-        }
-
-        .min-h-screen {
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
             min-height: 100vh;
         }
 
-        .py-3 {
-            padding-top: .75rem;
-            padding-bottom: .75rem;
-        }
-
-        .px-6 {
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-        }
-
-        .pb-full {
-            padding-bottom: 100%;
-        }
-
-        .absolute {
-            position: absolute;
-        }
-
-        .relative {
+        .left-section {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(25px);
+            border-radius: 28px;
+            padding: 52px;
+            box-shadow: 0 30px 60px rgba(220, 38, 38, 0.15), 0 8px 25px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             position: relative;
+            overflow: hidden;
         }
 
-        .pin {
+        .left-section::before {
+            content: '';
+            position: absolute;
             top: 0;
-            right: 0;
-            bottom: 0;
             left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #ee5a52, #d63384, #b91c1c);
+            border-radius: 28px 28px 0 0;
         }
 
-        .text-black {
-            color: #22292f;
-        }
-
-        .text-grey-darkest {
-            color: #3d4852;
-        }
-
-        .text-grey-darker {
-            color: #606f7b;
-        }
-
-        .text-2xl {
-            font-size: 1.5rem;
-        }
-
-        .text-5xl {
-            font-size: 2rem;
-        }
-
-        .uppercase {
-            text-transform: uppercase;
-        }
-
-        .antialiased {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .tracking-wide {
-            letter-spacing: .05em;
-        }
-
-        .w-16 {
-            width: 4rem;
-        }
-
-        .w-full {
-            width: 100%;
-        }
-
-        @media (min-width: 768px) {
-            .md\:bg-left {
-                background-position: left;
-            }
-
-            .md\:bg-right {
-                background-position: right;
-            }
-
-            .md\:flex {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-            }
-
-            .md\:my-6 {
-                margin-top: 1.5rem;
-                margin-bottom: 1rem;
-            }
-
-            .md\:min-h-screen {
-                min-height: 100vh;
-            }
-
-            .md\:pb-0 {
-                padding-bottom: 0;
-            }
-
-            .md\:text-3xl {
-                font-size: 1.875rem;
-            }
-
-            .md\:text-15xl {
-                font-size: 2rem;
-            }
-        }
-
-        @media(max-width: 767px){
-            .main-body{
-                display: grid;
-                flex-direction: column;
-            }
-
-            .left-sec{
-                order: 2;
-                text-align: center;
-                height: 70vh;
-            }
-
-            .right-sec{
-                order: 1;
-                padding-bottom: unset;
-                background-size: 100% 185% !important;
-                background-position: center;
-                height: 30vh;
-            }
-
-            .m-8 {
-               margin: 0.5rem 1.8rem;
-            }
-
-            .content-body{
-                max-height: 66vh;
-                overflow-y: scroll;    
-            }
-
-            .text-5xl {
-                font-size: 1.7rem;
-            }
-
-            .mb-7 {
-                margin-bottom: 1rem;
-            }
-
-            h1 {
-                 font-size: 1.15rem !important;
-            }
-
-            .show-mobile{
-                display: block;
-            }
-
-            .show-tablet{
-                display: none;
-            }
-
-            .left-sec{
-                background-image: url('./1.jpg')!important;
-            }
-        }
-
-        @media(min-width: 768px){
-            .show-mobile{
-                display: none;
-            }
-
-            .show-tablet{
-                display: block;
-            }
-        }
-
-        @media (max-width: 992px) and (min-width: 768px) {
-            .md\:w-1\/2 {
-                width: 70%;
-            }
-
-            .md\:w-1\/2:last-child {
-                width: 30%;
-            }
-
-            .right-sec{
-                background-size: unset!important;
-            }
-
-            .left-sec{
-                background-image: url('./1.jpg')!important;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .lg\:bg-center {
-                background-position: center;
-            }
-        }
-
-        .left-sec{
-            background-image: url('./1.jpg');
-            background-position: bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-
-        .left-sec p, .left-sec ul li, h1{
-            font-size: 12px;
-            color:  #3d3d3d;
-            line-height: 1.35;
-        }
-
-        .left-sec ul{
-            padding-left: 1.1rem;
-        }
-
-        .left-sec ul li{
-            margin-bottom: 1rem;
-        }
-
-        .left-sec ul li strong{
-            font-weight: 600;
-        }
-
-        ul.cferror_details{
-            border-top: 2rem solid transparent;
-            position: relative;
-            padding-left: 0;
-        }
-
-        ul.cferror_details::before {
-            content: "";
-            border-top: 2px solid #d3d3d3;
-            width: 100%;
-            top: -11px;
+        .left-section::after {
+            content: '';
             position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 107, 107, 0.02), transparent);
+            animation: rotate 30s linear infinite;
+            z-index: -1;
         }
 
-        ul.cferror_details li{
-           display: inline;
-            margin-right: 0.6rem;
-            margin-bottom: 0.2rem;
-            font-size: 10px;
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
-        ul.cferror_details li::before {
-            content: '•';
-            padding-right: 6px;
+        .right-section {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(25px);
+            border-radius: 28px;
+            padding: 52px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
         }
 
-        ul.cferror_details li:first-child::before {
-            content: none;
+        .right-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+            animation: shine 4s ease-in-out infinite;
         }
 
-        .left-sec p.std-text.bold{
-           font-weight: 600;
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
         }
 
-        h1{
-            font-size: 1.21rem;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 32px;
         }
 
-        .left-sec p.highlight{
-            font-size: 14px;
+        .logo i {
+            font-size: 36px;
+            color: #dc2626;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52, #d63384);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 2px 4px rgba(220, 38, 38, 0.3));
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e293b;
+            margin: 0;
+        }
+
+        .main-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #64748b;
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+
+        .domain-info {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52, #d63384);
+            color: white;
+            padding: 20px 28px;
+            border-radius: 16px;
+            margin-bottom: 36px;
             font-weight: 600;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(255, 107, 107, 0.4), 0 4px 15px rgba(220, 38, 38, 0.2);
+            position: relative;
+            overflow: hidden;
         }
 
-        .sub-footer p{
-            color: #747474;
+        .domain-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shimmer 3s ease-in-out infinite;
         }
 
-        .error-text{
-            color:#d3333e!important;
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
         }
 
-        .sub-footer ul li{
-            color: #3d3d3d;
-            font-size: 10px;
-            display: inline;
-            margin-left: 5px;
+        .verification-section {
+            background: linear-gradient(135deg, #fef2f2, #fdf2f8);
+            border-radius: 20px;
+            padding: 36px;
+            margin-bottom: 36px;
+            border: 2px solid rgba(255, 107, 107, 0.2);
+            text-align: center;
+            position: relative;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.1);
         }
 
-        .sub-footer ul li:first-child{
-            margin-left: 0px
+        .verification-section::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52, #d63384, #b91c1c);
+            border-radius: 20px;
+            z-index: -1;
+            opacity: 0.15;
         }
 
-        .sub-footer ul li::before{
-            content: '•';
-            padding-right: 6px;
+        .captcha-placeholder {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 48px 24px;
+            margin: 16px 0;
+            color: #64748b;
+            font-size: 14px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .sub-footer ul li:first-child::before {
-            content: none;
-        }
-        
-        .sub-footer ul{
-            padding:0;
+        .captcha-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 107, 107, 0.15), transparent);
+            animation: loading 2.5s ease-in-out infinite;
         }
 
-        h1{
-            margin-bottom: 0;
+        @keyframes loading {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .instruction {
+            background: linear-gradient(135deg, #fef2f2, #fdf2f8);
+            border-left: 5px solid #ef4444;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.1);
+        }
+
+        .instruction h3 {
+            color: #dc2626;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .instruction p {
+            color: #991b1b;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .warning {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-left: 5px solid #f59e0b;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.1);
+        }
+
+        .warning h3 {
+            color: #92400e;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .warning p {
+            color: #78350f;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .error {
+            background: linear-gradient(135deg, #fee2e2, #fecaca);
+            border-left: 5px solid #dc2626;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.15);
+        }
+
+        .error h3 {
+            color: #b91c1c;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .error p {
+            color: #991b1b;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52, #d63384);
+            color: white;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 107, 0.5);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #dc2626;
+            border: 2px solid #dc2626;
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: #dc2626;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(220, 38, 38, 0.3);
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #dc2626;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 8px 16px;
+            border-radius: 12px;
+            background: rgba(220, 38, 38, 0.05);
+        }
+
+        .contact-link:hover {
+            color: #b91c1c;
+            transform: translateX(6px);
+            background: rgba(220, 38, 38, 0.1);
+        }
+
+        .footer {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        .footer ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer li {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .footer i {
+            color: #94a3b8;
+        }
+
+        .anime-illustration {
+            width: 220px;
+            height: 220px;
+            margin-bottom: 36px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52, #d63384);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 90px;
+            color: white;
+            box-shadow: 0 25px 50px rgba(255, 107, 107, 0.4);
+            animation: pulse 3s ease-in-out infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .anime-illustration::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: rotate 8s linear infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .feature-list i {
+            color: #10b981;
+            font-size: 20px;
+            background: rgba(16, 185, 129, 0.1);
+            padding: 8px;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 16px;
+            }
+
+            .left-section,
+            .right-section {
+                padding: 24px;
+            }
+
+            .main-title {
+                font-size: 24px;
+            }
+
+            .anime-illustration {
+                width: 120px;
+                height: 120px;
+                font-size: 48px;
+            }
+
+            .right-section {
+                order: -1;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            .left-section {
+                background: rgba(30, 41, 59, 0.95);
+                color: white;
+            }
+
+            .logo h1,
+            .main-title {
+                color: white;
+            }
+
+            .subtitle {
+                color: #94a3b8;
+            }
+
+            .verification-section {
+                background: rgba(51, 65, 85, 0.5);
+            }
+
+            .captcha-placeholder {
+                background: rgba(239, 68, 68, 0.5);
+                border-color: #dc2626;
+                color: #b91c1c;
+            }
+
+            .footer {
+                border-color: #475569;
+            }
         }
     </style>
-    <style type="text/css">
-.right-sec{
-    background-image: url('./2.jpg');
-    background-size: 100% 100%;
-}
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #0056b3;
-  }
-</style>
-
-<script type="text/javascript">
-    window.onload = function runScript(){
-        document.getElementById("domainName").innerHTML = window.location.hostname;
-    };
-</script>
 </head>
-<body class="antialiased font-sans">
-    <div class="md:flex min-h-screen main-body">
-        <div class="w-full md:w-1/2 bg-white flex items-center justify-center left-sec">
-            <div class="max-w-sm m-8 content-body">
-                <div class="text-black text-5xl md:text-15xl font-black">Rất Xin Lỗi Về Sự Bất Tiện Này...</div>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">
+                <i class="fas fa-play-circle"></i>
+                <h1>AnimeVietsub</h1>
+            </div>
 
-                <p class="text-grey-darker text-2xl md:text-3xl mb-7 leading-normal">
-                    </p><p class="sub-header"><h1>Vui lòng hoàn tất xác minh bên dưới để tiếp tục xem anime tại: <span id="domainName"></span></h1></p>
-                    </p><p class="highlight">Làm sao để xác minh?</p>
-                    <p class="std-text">Bạn vui lòng đợi chút sẽ có một ô vuông ngay bên dưới bạn tích vào đó là xem được anime ⬇</p>
-                <br>
-                ::CAPTCHA_BOX::
-                <br>
-                </p><p class="highlight">Hãy sử dụng trình duyệt khác nếu không hiện thị ô xác minh!</p>
-                <br>
-                </p><p class="highlight">Nếu bạn bị lỗi xác minh lặp lại hãy ấn "Tải Lại Trang" hoặc dùng trình duyệt khác!</p>
-                <button id="unregisterButton">Tải Lại Trang</button>
-                <br>
-                <p class="highlight">Vui lòng liên hệ với admin nếu không xác minh được <a href="https://www.facebook.com/animevsub"><b>tại đây</b></a></p>
-                 <div class="sub-footer">
-                    <div class="w-full h-2 bg-grey-light my-3 md:my-6"></div>
-                    <ul>
-                        <li>Cloudflare ID: ::RAY_ID::</li>
-                        <li>Địa chỉ IP: ::CLIENT_IP::</li>
-                        <li>Performance &amp; Security by Cloudflare</li>
-                    </ul>
-                </div> 
+            <h2 class="main-title">Xác Minh Bảo Mật</h2>
+            <p class="subtitle">Chúng tôi cần xác minh rằng bạn là người thật để bảo vệ trang web khỏi các cuộc tấn công tự động.</p>
 
+            <div class="domain-info">
+                <i class="fas fa-globe"></i>
+                Đang truy cập: <span id="domainName"></span>
+            </div>
+
+            <div class="instruction">
+                <h3><i class="fas fa-info-circle"></i> Hướng dẫn xác minh</h3>
+                <p>Vui lòng đợi một chút để hệ thống tải ô xác minh bên dưới, sau đó click vào ô đó để hoàn tất quá trình xác minh.</p>
+            </div>
+
+            <div class="verification-section">
+                <h3>Khu vực xác minh</h3>
+                <div class="captcha-placeholder">
+                    <i class="fas fa-shield-alt" style="font-size: 24px; color: #dc2626; margin-bottom: 16px;"></i>
+                    <br>
+                    <strong>::CAPTCHA_BOX::</strong>
+                    <br>
+                    <small>Ô xác minh sẽ xuất hiện tại đây</small>
+                </div>
+            </div>
+
+            <div class="warning">
+                <h3><i class="fas fa-exclamation-triangle"></i> Lưu ý quan trọng</h3>
+                <p>Nếu không thấy ô xác minh, vui lòng thử với trình duyệt khác hoặc tắt trình chặn quảng cáo.</p>
+            </div>
+
+            <div class="error">
+                <h3><i class="fas fa-redo-alt"></i> Gặp vấn đề?</h3>
+                <p>Nếu xác minh bị lỗi lặp lại, hãy thử tải lại trang hoặc sử dụng trình duyệt khác.</p>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 24px;">
+                <button id="unregisterButton" class="btn btn-primary">
+                    <i class="fas fa-refresh"></i>
+                    Tải Lại Trang
+                </button>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 24px;">
+                <a href="https://www.facebook.com/animevietsub.info" class="contact-link">
+                    <i class="fab fa-facebook"></i>
+                    Liên hệ Admin để được hỗ trợ
+                </a>
+            </div>
+
+            <div class="footer">
+                <ul>
+                    <li><i class="fas fa-fingerprint"></i> Cloudflare ID: ::RAY_ID::</li>
+                    <li><i class="fas fa-map-marker-alt"></i> IP: ::CLIENT_IP::</li>
+                    <li><i class="fas fa-shield-alt"></i> Bảo mật bởi Cloudflare</li>
+                </ul>
             </div>
         </div>
 
-        <div class="relative pb-full md:flex md:pb-0 md:min-h-screen w-full md:w-1/2 right-sec">
+        <div class="right-section">
+            <div class="anime-illustration">
+                <i class="fas fa-film"></i>
+            </div>
+            
+            <h3 style="margin-bottom: 16px; font-size: 24px;">Trải nghiệm anime tuyệt vời</h3>
+            <p style="margin-bottom: 32px; opacity: 0.9;">Hàng nghìn bộ anime chất lượng cao đang chờ bạn khám phá!</p>
+            
+            <ul class="feature-list">
+                <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Chất lượng HD/Full HD</span>
+                </li>
+                <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Phụ đề tiếng Việt</span>
+                </li>
+                <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Cập nhật nhanh nhất</span>
+                </li>
+                <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Miễn phí 100%</span>
+                </li>
+            </ul>
         </div>
     </div>
+
     <script>
-    // Function to unregister SW
-    function unregisterSW() {
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(registrations => {
-          if (registrations.length === 0) {
-            alert('Không thể xoá sw! Hãy đổi trình duyệt khác');
-            location.reload();
-            return;
-          }
-          Promise.all(registrations.map(registration => registration.unregister()))
-            .then(() => {
-              alert('Xoá lịch sử thành công và tải lại trang');
-              // Reload the page after unregistering SW
-              location.reload();
-            })
-            .catch(error => {
-              alert('Lỗi tải lại trang:', error);
+        // Set domain name
+        window.onload = function() {
+            document.getElementById("domainName").innerHTML = window.location.hostname;
+        };
+
+        // Service Worker unregister function
+        function unregisterSW() {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(registrations => {
+                    if (registrations.length === 0) {
+                        alert('Không thể xóa service worker! Hãy thử trình duyệt khác.');
+                        location.reload();
+                        return;
+                    }
+                    Promise.all(registrations.map(registration => registration.unregister()))
+                        .then(() => {
+                            alert('Đã xóa cache thành công và tải lại trang!');
+                            location.reload();
+                        })
+                        .catch(error => {
+                            console.error('Lỗi khi tải lại trang:', error);
+                            alert('Có lỗi xảy ra, vui lòng thử lại!');
+                        });
+                });
+            } else {
+                alert('Trình duyệt không hỗ trợ Service Worker. Hãy sử dụng Chrome, Edge, hoặc Firefox.');
+            }
+        }
+
+        // Add click event listener
+        document.getElementById('unregisterButton').addEventListener('click', unregisterSW);
+
+        // Add some interactive effects
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
             });
         });
-      } else {
-        alert('Trình duyệt của bạn có thể không hỗ trợ, hãy dùng trình duyệt Chrome, Edge, Firefox');
-      }
-    }
-
-    // Event listener for the button click
-    document.getElementById('unregisterButton').addEventListener('click', unregisterSW);
-</script>
-
-</body></html>
+    </script>
+</body>
+</html>
