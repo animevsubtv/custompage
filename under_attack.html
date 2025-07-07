@@ -1,741 +1,119 @@
-
-<html lang="vi"><head>
-    <title>Xác Minh An Toàn</title>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,900" rel="stylesheet">
-
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác Minh An Toàn - AnimeVietsub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        html {
-            line-height: 1.15;
-                -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        header,
-        nav,
-        section {
-            display: block;
-        }
-
-        figcaption,
-        main {
-            display: block;
-        }
-
-        a {
-            background-color: transparent;
-            -webkit-text-decoration-skip: objects;
-        }
-
-        strong {
-            font-weight: inherit;
-        }
-
-        strong {
-            font-weight: bolder;
-        }
-
-        code {
-            font-family: monospace, monospace;
-            font-size: 1em;
-        }
-
-        dfn {
-            font-style: italic;
-        }
-
-        svg:not(:root) {
-            overflow: hidden;
-        }
-
-        button,
-        input {
-            font-family: sans-serif;
-            font-size: 100%;
-            line-height: 1.15;
-            margin: 0;
-        }
-
-        button,
-        input {
-            overflow: visible;
-        }
-
-        button {
-            text-transform: none;
-        }
-
-        button,
-        html [type="button"],
-        [type="reset"],
-        [type="submit"] {
-            -webkit-appearance: button;
-        }
-
-        button::-moz-focus-inner,
-        [type="button"]::-moz-focus-inner,
-        [type="reset"]::-moz-focus-inner,
-        [type="submit"]::-moz-focus-inner {
-            border-style: none;
-            padding: 0;
-        }
-
-        button:-moz-focusring,
-        [type="button"]:-moz-focusring,
-        [type="reset"]:-moz-focusring,
-        [type="submit"]:-moz-focusring {
-            outline: 1px dotted ButtonText;
-        }
-
-        legend {
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            color: inherit;
-            display: table;
-            max-width: 100%;
-            padding: 0;
-            white-space: normal;
-        }
-
-        [type="checkbox"],
-        [type="radio"] {
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            padding: 0;
-        }
-
-        [type="number"]::-webkit-inner-spin-button,
-        [type="number"]::-webkit-outer-spin-button {
-            height: auto;
-        }
-
-        [type="search"] {
-            -webkit-appearance: textfield;
-            outline-offset: -2px;
-        }
-
-        [type="search"]::-webkit-search-cancel-button,
-        [type="search"]::-webkit-search-decoration {
-            -webkit-appearance: none;
-        }
-
-        ::-webkit-file-upload-button {
-            -webkit-appearance: button;
-            font: inherit;
-        }
-
-        menu {
-            display: block;
-        }
-
-        canvas {
-            display: inline-block;
-        }
-
-        template {
-            display: none;
-        }
-
-        [hidden] {
-            display: none;
-        }
-
-        html {
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            font-family: sans-serif;
-        }
-
-        *,
-        *::before,
-        *::after {
-            -webkit-box-sizing: inherit;
-                    box-sizing: inherit;
-        }
-
-        p {
-            margin: 5px 0px;
-        }
-
-        button {
-            background: transparent;
-            padding: 0;
-        }
-
-        button:focus {
-            outline: 1px dotted;
-            outline: 5px auto -webkit-focus-ring-color;
-        }
-
-        *,
-        *::before,
-        *::after {
-            border-width: 0;
-            border-style: solid;
-            border-color: #dae1e7;
-        }
-
-        button,
-        [type="button"],
-        [type="reset"],
-        [type="submit"] {
-            border-radius: 0;
-        }
-
-        button,
-        input {
-            font-family: inherit;
-        }
-
-        input::-webkit-input-placeholder {
-            color: inherit;
-            opacity: .5;
-        }
-
-        input:-ms-input-placeholder {
-            color: inherit;
-            opacity: .5;
-        }
-
-        input::-ms-input-placeholder {
-            color: inherit;
-            opacity: .5;
-        }
-
-        input::placeholder {
-            color: inherit;
-            opacity: .5;
-        }
-
-        button,
-        [role=button] {
-            cursor: pointer;
-        }
-
-        h1{
-            font-weight: 400;
-        }
-
-        .bg-transparent {
-            background-color: transparent;
-        }
-
-        .bg-white {
-            background-color: #fff;
-        }
-
-        .bg-teal-light {
-            background-color: #64d5ca;
-        }
-
-        .bg-blue-dark {
-            background-color: #2779bd;
-        }
-
-        .bg-indigo-light {
-            background-color: #7886d7;
-        }
-
-        .bg-grey-light {
-            background-color: #ddd;
-        }
-
-        .bg-no-repeat {
-            background-repeat: no-repeat;
-        }
-
-        .bg-cover {
-            background-size: cover;
-        }
-
-        .border-grey-light {
-            border-color: #dae1e7;
-        }
-
-        .hover\:border-grey:hover {
-            border-color: #b8c2cc;
-        }
-
-        .rounded-lg {
-            border-radius: .5rem;
-        }
-
-        .border-2 {
-            border-width: 2px;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .flex {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-        }
-
-        .items-center {
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-        }
-
-        .justify-center {
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-        }
-
-        .font-sans {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .font-light {
-            font-weight: 300;
-        }
-
-        .font-bold {
-            font-weight: 700;
-        }
-
-        .font-black {
-            font-weight: 900;
-        }
-
-        .h-1 {
-            height: .25rem;
-        }
-
-        .h-2 {
-            height: .18rem;
-        }
-
-        .leading-normal {
-            line-height: 1.5;
-        }
-
-        .m-8 {
-            margin: 2rem;
-        }
-
-        .my-3 {
-            margin-top: .75rem;
-            margin-bottom: .75rem;
-        }
-
-        .mb-8 {
-            margin-bottom: 2rem;
-        }
-
-        .mb-7 {
-            margin-bottom: 1.6rem;
-        }
-
-        .max-w-sm {
-            max-width: 40rem;
-        }
-
-        .min-h-screen {
-            min-height: 100vh;
-        }
-
-        .py-3 {
-            padding-top: .75rem;
-            padding-bottom: .75rem;
-        }
-
-        .px-6 {
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-        }
-
-        .pb-full {
-            padding-bottom: 100%;
-        }
-
-        .absolute {
-            position: absolute;
-        }
-
-        .relative {
-            position: relative;
-        }
-
-        .pin {
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-
-        .text-black {
-            color: #22292f;
-        }
-
-        .text-grey-darkest {
-            color: #3d4852;
-        }
-
-        .text-grey-darker {
-            color: #606f7b;
-        }
-
-        .text-2xl {
-            font-size: 1.5rem;
-        }
-
-        .text-5xl {
-            font-size: 2rem;
-        }
-
-        .uppercase {
-            text-transform: uppercase;
-        }
-
-        .antialiased {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .tracking-wide {
-            letter-spacing: .05em;
-        }
-
-        .w-16 {
-            width: 4rem;
-        }
-
-        .w-full {
-            width: 100%;
-        }
-
-        @media (min-width: 768px) {
-            .md\:bg-left {
-                background-position: left;
-            }
-
-            .md\:bg-right {
-                background-position: right;
-            }
-
-            .md\:flex {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-            }
-
-            .md\:my-6 {
-                margin-top: 1.5rem;
-                margin-bottom: 1rem;
-            }
-
-            .md\:min-h-screen {
-                min-height: 100vh;
-            }
-
-            .md\:pb-0 {
-                padding-bottom: 0;
-            }
-
-            .md\:text-3xl {
-                font-size: 1.875rem;
-            }
-
-            .md\:text-15xl {
-                font-size: 2rem;
-            }
-        }
-
-        @media(max-width: 767px){
-            .main-body{
-                display: grid;
-                flex-direction: column;
-            }
-
-            .left-sec{
-                order: 2;
-                text-align: center;
-                height: 70vh;
-            }
-
-            .right-sec{
-                order: 1;
-                padding-bottom: unset;
-                background-size: 100% 185% !important;
-                background-position: center;
-                height: 30vh;
-            }
-
-            .m-8 {
-               margin: 0.5rem 1.8rem;
-            }
-
-            .content-body{
-                max-height: 66vh;
-                overflow-y: scroll;    
-            }
-
-            .text-5xl {
-                font-size: 1.7rem;
-            }
-
-            .mb-7 {
-                margin-bottom: 1rem;
-            }
-
-            h1 {
-                 font-size: 1.15rem !important;
-            }
-
-            .show-mobile{
-                display: block;
-            }
-
-            .show-tablet{
-                display: none;
-            }
-
-            .left-sec{
-                background-image: url('./1.jpg')!important;
-            }
-        }
-
-        @media(min-width: 768px){
-            .show-mobile{
-                display: none;
-            }
-
-            .show-tablet{
-                display: block;
-            }
-        }
-
-        @media (max-width: 992px) and (min-width: 768px) {
-            .md\:w-1\/2 {
-                width: 70%;
-            }
-
-            .md\:w-1\/2:last-child {
-                width: 30%;
-            }
-
-            .right-sec{
-                background-size: unset!important;
-            }
-
-            .left-sec{
-                background-image: url('./1.jpg')!important;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .lg\:bg-center {
-                background-position: center;
-            }
-        }
-
-        .left-sec{
-            background-image: url('./1.jpg');
-            background-position: bottom;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-
-        .left-sec p, .left-sec ul li, h1{
-            font-size: 12px;
-            color:  #3d3d3d;
-            line-height: 1.35;
-        }
-
-        .left-sec ul{
-            padding-left: 1.1rem;
-        }
-
-        .left-sec ul li{
-            margin-bottom: 1rem;
-        }
-
-        .left-sec ul li strong{
-            font-weight: 600;
-        }
-
-        ul.cferror_details{
-            border-top: 2rem solid transparent;
-            position: relative;
-            padding-left: 0;
-        }
-
-        ul.cferror_details::before {
-            content: "";
-            border-top: 2px solid #d3d3d3;
-            width: 100%;
-            top: -11px;
-            position: absolute;
-        }
-
-        ul.cferror_details li{
-           display: inline;
-            margin-right: 0.6rem;
-            margin-bottom: 0.2rem;
-            font-size: 10px;
-        }
-
-        ul.cferror_details li::before {
-            content: '•';
-            padding-right: 6px;
-        }
-
-        ul.cferror_details li:first-child::before {
-            content: none;
-        }
-
-        .left-sec p.std-text.bold{
-           font-weight: 600;
-        }
-
-        h1{
-            font-size: 1.21rem;
-        }
-
-        .left-sec p.highlight{
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .sub-footer p{
-            color: #747474;
-        }
-
-        .error-text{
-            color:#d3333e!important;
-        }
-
-        .sub-footer ul li{
-            color: #3d3d3d;
-            font-size: 10px;
-            display: inline;
-            margin-left: 5px;
-        }
-
-        .sub-footer ul li:first-child{
-            margin-left: 0px
-        }
-
-        .sub-footer ul li::before{
-            content: '•';
-            padding-right: 6px;
-        }
-
-        .sub-footer ul li:first-child::before {
-            content: none;
-        }
-        
-        .sub-footer ul{
-            padding:0;
-        }
-
-        h1{
-            margin-bottom: 0;
-        }
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Poppins',sans-serif;background:linear-gradient(135deg,#ff9a9e,#fecfef,#ff6b6b,#d63384);min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative}
+        .container{max-width:1200px;width:100%;margin:0 auto;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;min-height:100vh}
+        .left-section{background:rgba(255,255,255,0.95);backdrop-filter:blur(25px);border-radius:25px;padding:40px;box-shadow:0 20px 40px rgba(220,38,38,0.15);border:2px solid rgba(255,182,193,0.3);position:relative}
+        .left-section::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#ff6b6b,#e91e63,#d63384);border-radius:25px 25px 0 0}
+        .right-section{background:rgba(255,255,255,0.15);backdrop-filter:blur(25px);border-radius:25px;padding:40px;border:2px solid rgba(255,255,255,0.3);display:flex;flex-direction:column;align-items:center;text-align:center;color:white;position:relative}
+        .logo{display:flex;align-items:center;gap:15px;margin-bottom:24px}
+        .logo i{font-size:36px;background:linear-gradient(45deg,#ff6b6b,#e91e63,#d63384);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .logo h1{font-size:24px;font-weight:700;background:linear-gradient(45deg,#2d3748,#4a5568);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:0}
+        .main-title{font-size:28px;font-weight:700;background:linear-gradient(45deg,#1e293b,#334155);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px;line-height:1.2}
+        .subtitle{font-size:16px;color:#64748b;margin-bottom:24px;line-height:1.6;font-weight:500}
+        .alert-section{background:linear-gradient(135deg,#fef2f2,#fee2e2);border-radius:20px;padding:32px;margin-bottom:24px;border:2px solid rgba(239,68,68,0.3);text-align:center;position:relative;box-shadow:0 8px 25px rgba(239,68,68,0.15)}
+        .alert-section h3{color:#dc2626;font-size:18px;font-weight:700;margin-bottom:16px}
+        .attack-indicator{background:linear-gradient(135deg,#dc2626,#b91c1c);color:white;border-radius:12px;padding:20px;margin:12px 0;position:relative;box-shadow:0 8px 20px rgba(220,38,38,0.3);animation:pulse 2s ease-in-out infinite}
+        @keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 8px 20px rgba(220,38,38,0.3)}50%{transform:scale(1.02);box-shadow:0 12px 30px rgba(220,38,38,0.5)}}
+        .status-section{background:linear-gradient(135deg,#fffbeb,#fef3c7);border-radius:18px;padding:20px;margin-bottom:20px;border-left:4px solid #f59e0b}
+        .status-section h3{color:#92400e;font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+        .status-section p{color:#78350f;line-height:1.6;font-weight:500}
+        .info-section{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border-radius:18px;padding:20px;margin-bottom:20px;border-left:4px solid #0ea5e9}
+        .info-section h3{color:#0369a1;font-size:16px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+        .info-section p{color:#0c4a6e;line-height:1.6;font-weight:500}
+        .countdown{font-size:36px;font-weight:700;color:#dc2626;margin:16px 0;font-family:monospace;text-shadow:2px 2px 4px rgba(220,38,38,0.3)}
+        .footer{margin-top:24px;padding-top:20px;border-top:2px solid rgba(255,182,193,0.3);font-size:11px;color:#64748b}
+        .footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:16px}
+        .footer li{display:flex;align-items:center;gap:4px;font-weight:500}
+        .footer i{color:#ff6b6b}
+        .anime-illustration{width:200px;height:200px;margin-bottom:32px;background:linear-gradient(135deg,#ff6b6b,#e91e63,#d63384);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 20px 40px rgba(255,107,107,0.4);animation:float 4s ease-in-out infinite;border:3px solid rgba(255,255,255,0.3);padding:6px}
+        .anime-illustration img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+        @keyframes float{0%,100%{transform:translateY(0px)}50%{transform:translateY(-10px)}}
+        .right-section h3{font-size:22px;font-weight:700;margin-bottom:16px;text-shadow:2px 2px 4px rgba(0,0,0,0.3)}
+        .right-section p{font-size:14px;margin-bottom:24px;opacity:0.95;line-height:1.6;font-weight:500}
+        .feature-list{list-style:none;margin-bottom:24px}
+        .feature-list li{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:rgba(255,255,255,0.95);font-weight:600;font-size:14px}
+        .feature-list i{color:#10b981;font-size:18px;background:rgba(16,185,129,0.2);padding:8px;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:2px solid rgba(16,185,129,0.3)}
+        .shield-animation{display:inline-block;animation:shield-spin 3s linear infinite}
+        @keyframes shield-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+        @media (max-width:768px){.container{grid-template-columns:1fr;gap:16px;padding:12px}.left-section,.right-section{padding:24px 20px}.main-title{font-size:22px}.anime-illustration{width:140px;height:140px}.right-section{order:-1}.right-section h3{font-size:18px}.countdown{font-size:28px}}
+        @media (prefers-color-scheme:dark){.left-section{background:rgba(30,41,59,0.95);color:white;border-color:rgba(255,107,107,0.3)}.logo h1,.main-title{background:linear-gradient(45deg,#ffffff,#f1f5f9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.subtitle{color:#cbd5e1}.footer{border-color:rgba(255,107,107,0.3);color:#cbd5e1}}
     </style>
-    <style type="text/css">
-.right-sec{
-    background-image: url('./2.jpg');
-    background-size: 100% 100%;
-}
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #0056b3;
-  }
-</style>
-
-<script type="text/javascript">
-    window.onload = function runScript(){
-        document.getElementById("domainName").innerHTML = window.location.hostname;
-    };
-</script>
 </head>
-<body class="antialiased font-sans">
-    <div class="md:flex min-h-screen main-body">
-        <div class="w-full md:w-1/2 bg-white flex items-center justify-center left-sec">
-            <div class="max-w-sm m-8 content-body">
-                <div class="text-black text-5xl md:text-15xl font-black">Xác Minh An Toàn</div>
-
-                <p class="text-grey-darker text-2xl md:text-3xl mb-7 leading-normal">
-                    </p><p class="sub-header"><h1>Vui lòng hoàn tất xác minh bên dưới để tiếp tục truy cập: <span id="domainName"></span></h1></p>
-                             <p class="sub-header"><h1>Vui lòng tự liên hệ với quản trị viên của trang web: <span id="domainName"></span></h1></p>
-                             <p class="sub-header"><h1><a href="https://www.facebook.com/animevsub">tại đây</a></h1></p>
-                <br>
-                ::IM_UNDER_ATTACK_BOX::
-                <br>
-
-                <p class="highlight">Tại sao tôi phải xác minh?</p>
-                <p class="std-text">Vui lòng thực hiện xác minh người-máy để chứng minh bạn không phải là một robot. Sau khi hoàn thành quá trình xác minh, bạn sẽ có thể truy cập vào trang web này.</p>
-                <br>
-                </p><p class="highlight">Nếu bạn bị lỗi xác minh lặp lại hãy ấn "Tải Lại Trang" hoặc dùng trình duyệt khác!</p>
-                <button id="unregisterButton">Tải Lại Trang</button>
-                <br>
-                 <div class="sub-footer">
-                    <div class="w-full h-2 bg-grey-light my-3 md:my-6"></div>
-                    <ul>
-                        <li>Cloudflare ID: ::RAY_ID::</li>
-                        <li>Địa chỉ IP: ::CLIENT_IP::</li>
-                        <li>Performance &amp; Security by Cloudflare</li>
-                    </ul>
-                </div> 
-
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">
+                <i class="fas fa-torii-gate"></i>
+                <h1>AnimeVietsub</h1>
+            </div>
+            <h2 class="main-title">Chế Độ Bảo Vệ! 🛡️</h2>
+            <p class="subtitle">Trang web đang chịu tấn công và kích hoạt chế độ bảo vệ tự động 🌸</p>
+            <div class="alert-section">
+                <h3><i class="fas fa-exclamation-triangle"></i> Cảnh báo tấn công</h3>
+                <div class="attack-indicator">
+                    <i class="shield-animation fas fa-shield-alt" style="font-size: 24px; margin-bottom: 8px;"></i><br>
+                    <strong>ĐANG CHỐNG TẤN CÔNG DDoS</strong>
+                </div>
+                <div class="countdown" id="countdown">15</div>
+                <small>Tự động chuyển hướng sau khi kiểm tra hoàn tất ✨</small>
+            </div>
+            <div class="status-section">
+                <h3><i class="fas fa-chart-line"></i> Trạng thái hệ thống</h3>
+                <p>• Phát hiện lưu lượng bất thường<br>• Kích hoạt bộ lọc DDoS<br>• Xác minh người dùng thật<br>• Bảo vệ tài nguyên server 🎭</p>
+            </div>
+            <div class="info-section">
+                <h3><i class="fas fa-info-circle"></i> Thông tin quan trọng</h3>
+                <p>Chế độ này sẽ tự động tắt khi mối đe dọa kết thúc. Bạn không cần làm gì cả, chỉ cần đợi một chút! 💪</p>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li><i class="fas fa-fingerprint"></i> Ray ID: ::RAY_ID::</li>
+                    <li><i class="fas fa-map-marker-alt"></i> IP: ::CLIENT_IP::</li>
+                    <li><i class="fas fa-shield-alt"></i> Bảo mật bởi Cloudflare</li>
+                </ul>
             </div>
         </div>
-
-        <div class="relative pb-full md:flex md:pb-0 md:min-h-screen w-full md:w-1/2 right-sec">
+        <div class="right-section">
+            <div class="anime-illustration">
+                <img src="3883bc0d71ed10c82fc01ef0565dd740.jpg" alt="Anime Character" />
+            </div>
+            <h3>Hệ thống phòng thủ tự động 🚀</h3>
+            <p>Công nghệ AI tiên tiến giúp chúng tôi phát hiện và chống lại các cuộc tấn công trong thời gian thực! ✨</p>
+            <ul class="feature-list">
+                <li><i class="fas fa-shield-virus"></i><span>Chống DDoS thông minh</span></li>
+                <li><i class="fas fa-brain"></i><span>AI phân tích mối đe dọa</span></li>
+                <li><i class="fas fa-bolt"></i><span>Phản ứng tức thì</span></li>
+                <li><i class="fas fa-globe"></i><span>Mạng lưới toàn cầu</span></li>
+            </ul>
         </div>
     </div>
-     <script>
-    // Function to unregister SW
-    function unregisterSW() {
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(registrations => {
-          if (registrations.length === 0) {
-            alert('Không thể xoá sw! Hãy đổi trình duyệt khác');
-            location.reload();
-            return;
-          }
-          Promise.all(registrations.map(registration => registration.unregister()))
-            .then(() => {
-              alert('Xoá lịch sử thành công và tải lại trang');
-              // Reload the page after unregistering SW
-              location.reload();
-            })
-            .catch(error => {
-              alert('Lỗi tải lại trang:', error);
-            });
-        });
-      } else {
-        alert('Trình duyệt của bạn có thể không hỗ trợ, hãy dùng trình duyệt Chrome, Edge, Firefox');
-      }
-    }
-
-    // Event listener for the button click
-    document.getElementById('unregisterButton').addEventListener('click', unregisterSW);
-</script>
-
-</body></html>
+    <script>
+        let countdown = 15;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(function() {
+            countdown--;
+            countdownElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                clearInterval(timer);
+                countdownElement.textContent = '0';
+                document.querySelector('.attack-indicator').innerHTML = 
+                    '<i class="fas fa-check-circle" style="font-size: 24px; color: #10b981; margin-bottom: 8px;"></i><br>' +
+                    '<strong style="color: #10b981;">BẢO VỆ HOÀN TẤT</strong>';
+                setTimeout(function() {
+                    window.location.href = '::REDIRECT_URL::';
+                }, 2000);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
